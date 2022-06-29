@@ -1,5 +1,16 @@
 $(document).ready(function() { 
 
+  $( window ).resize(function() {
+    if ($(window).width() > 1100) {
+      $( ".mobile-line:first-child" ).css("transform","rotate(0deg)").css("margin-bottom","10px");
+      $( ".mobile-line:nth-of-type(2)" ).css("opacity","1");
+      $( ".mobile-line:last-child" ).css("transform","rotate(0deg)").css("margin-bottom","10px");
+      $(".mobile-menu").slideUp();
+      m=0;
+   }
+
+  });
+
     var i =1;
     var k=1; 
     var leftController = 1;
